@@ -1,0 +1,100 @@
+<!--
+GroundhogDayClock
+A pomodoro clock inspired in the film
+- - - - - - - - - -
+http://codepen.io/DizNicolasAmor/pen/mRaqEz
+Author:  Diz, Nicolás Amor (https://github.com/DizNicolasAmor)
+This project is a challenge posed by FreeCodeCamp.
+-->
+
+<!-- Still working on it... -->
+
+
+<!doctype HTML>
+<html>
+  <head>
+    <title>GroundhogDayClock</title>
+
+    <!-- bootstrap -->
+     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!--my css file-->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    
+    <!-- title and settings -->
+    <div class="container">
+      <h1>Groundhog Day Clock</h1>
+      <h2>A pomodoro clock inspired in the film</h2>
+      
+      <div class="row" id="settings">
+        <div class="col-xs-6" id="workTime">
+          <h4>Your day will have: </h4>
+          <div class="row">
+            <div class="col-xs-3">
+              <button class="btn btn-default" id="workMinus">-</button>
+            </div>
+            <div class="col-xs-3">
+              <h4 id="workMinutes">25</h4>
+            </div>
+            <div class="col-xs-3">
+              <button class="btn btn-default" id="workPlus">+</button>        
+            </div>
+            <div class="col-xs-3">
+              <div><h4>min.</h4></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-xs-6" id="breakTime">
+          <h4>Take a break of: </h4>
+          <div class="row">
+            <div class="col-xs-3">
+              <button class="btn btn-default" id="breakMinus">-</button>
+            </div>
+            <div class="col-xs-3">
+              <h4 id="breakMinutes">5</h4>
+            </div>
+            <div class="col-xs-3">
+              <button class="btn btn-default" id="breakPlus">+</button>        
+            </div>
+            <div class="col-xs-3">
+              <div><h4>min.</h4></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- msg -->
+      <h1 id="breakMsg">Shall we start? </h1>
+      
+      <!-- the clock -->
+      <h1 id="clock" class="center-block"></h1>
+      
+      <!--  control buttons -->
+      <h1 class="row" id="lastBtns">
+        <button class="btn btn-default btn-lg" id="start">START</button>
+        <button class="btn btn-default btn-lg" id="pause">PAUSE</button>
+        <button class="btn btn-default btn-lg" id="reset">RESET</button>
+      </h1>
+      
+      <footer class="text-center">Feb 2017 - Diz, Nicol&aacute;s Amor</footer>
+    
+    </div>    <!-- container --> 
+    
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+    <!-- my js file-->
+    <script src="main.js" type="text/javascript" charset="utf-8"></script>
+      
+  </body>
+</html>
+
+<!--  To do: 
+-style the clock:  it is a flip clock
+-session starts -> sound. 
+-When breaks starts: play dylan's song   https://www.youtube.com/watch?v=iweOSPbU73Y
+-->
