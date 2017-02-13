@@ -1,0 +1,65 @@
+/*
+GroundhogDayClock
+A pomodoro clock inspired in the film
+- - - - - - - - - -
+http://codepen.io/DizNicolasAmor/pen/mRaqEz
+Author:  Diz, Nicolás Amor (https://github.com/DizNicolasAmor)
+This project is a challenge posed by FreeCodeCamp.
+*/
+
+body{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c1/Groundhog_day_movie_1992_location_2007-03-18_IMG_4245.JPG");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+h1, h2, h3, h4{
+  font-family: Arial;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* classes */
+.container {
+  border-radius: 5%;
+  width: 80vw;
+  max-width: 45em;
+  min-width: 30em;
+  padding: 1.5em 2em;
+  margin: 4% auto;
+  background: rgba(255, 255, 255, .75);
+  box-shadow: .5em .5em .5em rgba(0, 0, 0, .4);
+}
+
+.container2 {
+  margin-left: 40%;
+  margin fight: 40%;
+}
+
+.btn {
+  background-color: #333333;
+  color: #CCCCCC;
+}
+
+
+/* targets */ 
+#btns{
+  display: flex;
+  justify-content: center;
+}
+
+#clock{
+  border-radius: 10%;
+  width: 350px;
+	height: 70px;
+  border: white solid;
+  background: black;
+
+  color:#fff;
+	text-align: center;
+	font-size: 60px;
+	
+  text-shadow:1px 1px 1px #000;
+	box-shadow:0px 1px 5px rgba(0,0,0,.6);
+}
