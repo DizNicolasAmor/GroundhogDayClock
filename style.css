@@ -31,11 +31,15 @@ h1, h2, h3, h4{
   margin: 4% auto;
   background: rgba(255, 255, 255, .75);
   box-shadow: .5em .5em .5em rgba(0, 0, 0, .4);
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
 }
 
 .container2 {
   margin-left: 40%;
-  margin fight: 40%;
+  margin-right: 40%;
 }
 
 .btn {
