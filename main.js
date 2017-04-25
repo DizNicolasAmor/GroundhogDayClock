@@ -53,6 +53,7 @@ $(document).ready(function(){
   var GDtime = 6*60*60; 
   var time = GDtime - countWork*60; 
   var running = 0;
+  var resetPressed = true;
   
   //main function
   function increment(){
@@ -106,33 +107,31 @@ $(document).ready(function(){
   
   //last buttons
   $("#start").click(function (){
-    time = GDtime - countWork*60; 
-    
-    if(running==0){
-      running=1;
-      $("#pause").html('PAUSE');
-
+    if(resetPressed == true){
+      resetPressed = false;
+      time = GDtime - countWork*60; 
+      $("#start").html('PAUSE');
+      running=true;
+      increment();
+    }else if(running == true){   //you want to pause the clock. 
+      $("#start").html('START');
+      running = false;
+    }else if(running == false){   //you want to continue, but not from reset. 
+      $("#start").html('PAUSE');
+      running=true;
+      increment();
     }
-    increment();
-  });
-  
-  $("#pause").click(function (){
-    if(running==1){
-       running =0;
-      $("#pause").html('PLAY');
-    }else if(running==0){
-      running=1;
-      $("#pause").html('PAUSE');
-    }
-    increment();
   });
   
   $('#reset').click(function(){
     time = GDtime - countWork*60;
-    running = 0; 
+    running = false; 
+    resetPressed == true;
+    $('#breakMsg').html('Shall we start?');
+    $("#start").html('START');
     $('#clock').html('06 : 00 : 00');
-    $("#pause").html('PLAY');
   });
+
 
   
 });  //document ready;
