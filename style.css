@@ -1,17 +1,31 @@
 /*
+Nico Diz
+https://github.com/DizNicolasAmor
+
 GroundhogDayClock
-A pomodoro clock inspired in the film
-- - - - - - - - - -
-http://codepen.io/DizNicolasAmor/pen/mRaqEz
-Author:  Diz, Nicolás Amor (https://github.com/DizNicolasAmor)
-This project is a challenge posed by FreeCodeCamp.
+A pomodoro clock inspired in the film. 
+
+You can see this project here: 
+  https://diznicolasamor.github.io/GroundhogDayClock/
+  http://codepen.io/DizNicolasAmor/pen/mRaqEz
+
+This project is a challenge posed by FreeCodeCamp. Be free to use it and change it. 
 */
 
-body{
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c1/Groundhog_day_movie_1992_location_2007-03-18_IMG_4245.JPG");
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url("images/backgroundGDClock.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
 }
 
 h1, h2, h3, h4{
